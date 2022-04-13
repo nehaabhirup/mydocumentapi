@@ -1,26 +1,33 @@
 //page 1
 # list of category
 >> http://localhost:9700/category
+>> https://myapi-heroku.herokuapp.com/category
 
 # list of items
 >> http://localhost:9700/list
+>> https://myapi-heroku.herokuapp.com/list
 
 //page 2
 # list of products
 >> http://localhost:9700/product
+>> https://myapi-heroku.herokuapp.com/product
 
 # list of products wrt category
 >> http://localhost:9700/product?category_id=1
+>> https://myapi-heroku.herokuapp.com/product?category_id=1
 
 # list of items wrt category
 >> http://localhost:9700/list?category_id=3
+>> https://myapi-heroku.herokuapp.com/list?category_id=3
 
 # list of items wrt products
 >> http://localhost:9700/list?product_Id=6
+>> https://myapi-heroku.herokuapp.com/list?product_Id=6
 
 //page 3
 # details of a particular item
 >> http://localhost:9700/details/49
+>> https://myapi-heroku.herokuapp.com/details/49
 
 //page 4
 # details of items selected
@@ -43,7 +50,7 @@
 >> localhost:9700/deleteOrders
 
 # Update Order
-(PUT)> localhost:9700/updateOrder/6256bafda3523cbf538d22bb
+(PUT)> localhost:9700/updateOrder/6256c39c0ca53bdd4c5798d9
 (body)> {
  "cost": 26,
  "qty": 2
