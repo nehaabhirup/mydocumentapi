@@ -37,21 +37,27 @@
 # place order
 (POST)> localhost:9700/placeOrder
 (body)> {
-    "name": "Onion",
-    "qty":1,
-    "cost": 20
+   {
+   "name": "Emma",
+   "email": "emma@gmail.com",
+   "phone": 5474784832,
+   "cost": 450,
+   "listitem":[47,34,85,67]
 }
 
 //page 5
 #  view orders
 >> localhost:9700/viewOrder
 
+# Get Order on basis of emailId
+>> localhost:9700/viewOrder?email=shamika@gmail.com
+
 # delete order
 >> localhost:9700/deleteOrders
 
 # Update Order
-(PUT)> localhost:9700/updateOrder/6256c39c0ca53bdd4c5798d9
+(PUT)> localhost:9700/updateOrder/6258285a46b9ae51328b8459
 (body)> {
- "cost": 26,
- "qty": 2
+    "cost": 390,
+    "phone": 9826457679
 }
